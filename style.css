@@ -21,8 +21,6 @@ body {
     background-attachment: fixed;
 }
 
-.body-top{}
-
 .body-top-nav {
     display: flex;
     gap: 50px;
@@ -36,11 +34,20 @@ body {
     color: white;
 }
 
+.body-top-nav-item {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+}
+
 .main {
     color: white;
     padding-left: 10%;
     padding-top: 200px;
-
 }
 
 .main-infos {
@@ -74,7 +81,7 @@ body {
 .main-body-nav {
     display: flex;
     gap: 30px;
-    
+
 }
 
 .main-body-nav-button {
@@ -83,18 +90,18 @@ body {
     font-size: 16px;
     display: block;
     color: white;
-    background-image: linear-gradient(to right, #DA22FF 10%, #610cac  51%, #DA22FF  100%);
+    background-image: linear-gradient(to right, #DA22FF 10%, #610cac 51%, #DA22FF 100%);
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
     background-size: 200% auto;
-    border-radius: 450px;    
+    border-radius: 450px;
     border-width: 0px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .main-body-nav-button:hover {
     background-position: right center;
     color: #fff;
     text-decoration: none;
-  }
+}
