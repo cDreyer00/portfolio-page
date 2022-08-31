@@ -15,7 +15,6 @@ body {
     background: #0F143E;
     font-family: 'Outfit', sans-serif;
 
-    background-image: url("Figma/Exports/RightBackground.svg");
     background-position: right;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -104,4 +103,15 @@ body {
     background-position: right center;
     color: #fff;
     text-decoration: none;
+}
+
+.image {
+    position: absolute;
+    right: 30%;
+    top: 30%;
+}
+
+.personalPic {
+    border-radius: 50%;
+    width: 300px;
 }
