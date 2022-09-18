@@ -3,22 +3,21 @@
 * {
     margin: 0;
     padding: 0%;
-    box-sizing: border-box;
-    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    background: none;
+    border: none;
 }
 
+/* ---------- MAIN TAGS ---------- */
 
-.body {
-
-    width: 1920px;
+body {
     font-size: 100%;
     background: #0F143E;
-    font-family: 'Outfit', sans-serif;
-
-    background-position: right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
+
+
+/* ---------- CLASSES ---------- */
+
 
 .body-top-nav {
     display: flex;
@@ -70,24 +69,23 @@
     line-height: 35px;
 }
 
-.main-infos-texts-desc {
-    width: 300px;
-    height: 100px;
 
-    padding-top: 10px;
-}
-
-.main-body-nav {
+.flex-row {
     display: flex;
-    gap: 30px;
-
+    flex-direction: row;        
 }
 
-.main-body-nav-button {
+.buttons{
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main-buttons {
     transition: 0.3s;
-    font-family: 'Outfit', sans-serif;
-    font-size: 16px;
-    display: block;
+
+    font-size: 16px;    
+
     color: white;
     background-image: linear-gradient(to right, #DA22FF 10%, #610cac 51%, #DA22FF 100%);
     margin: 10px;
@@ -99,19 +97,37 @@
     cursor: pointer;
 }
 
-.main-body-nav-button:hover {
+.main-buttons:hover {
     background-position: right center;
     color: #fff;
     text-decoration: none;
 }
 
-.image {
-    position: absolute;
-    right: 30%;
-    top: 30%;
+/* ---------- IDs ---------- */
+
+#top-nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-right: 30px;
+    justify-content: end;
+    gap: 30px;    
 }
 
-.personalPic {
+#main-infos {    
+    color: white;
+    font-size: 30px;
+    width: fit-content;    
+    margin-right: auto;
+    margin-left: 500px;
+    padding-top: 300px;
+}
+
+#pic {        
+    position: absolute;
+    bottom: 300px;        
+    left: 50%;
+    right: 50%;
     border-radius: 50%;
     width: 300px;
 }
