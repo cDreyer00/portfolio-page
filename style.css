@@ -1,63 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-div{
+div {
     color: white;
 }
 
-body{
+body {
     padding-bottom: 50px;
 }
 
 /* CONTENT */
 
-#content{
+#content {
     padding-left: 15%;
 }
 
 /* INTRO */
 
-#intro{
+#intro {
     padding-top: 20%;
 }
 
 /* ABOUT */
 
-#about{
+#about {
     padding-top: 5%;
+}
+
+#about-content {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    gap: 200px;
+
+}
+#about-content p{
+    max-width: 500px;
+    font-size: 22px;
+}
+
+#picture{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
 }
 
 /* EXPERIENCE */
 
-#experience{
+#experience {
     padding-top: 5%;
 }
 
-.topics-box{
+.topics-box {
     padding-top: 20px;
     display: flex;
     gap: 50px;
 }
 
-.topics-box_topics{
+.topics-box_topics {
     display: flex;
     flex-direction: column;
 }
 
-.topics-box_about{
-    padding-top:  10px;
+.topics-box_about {
+    padding-top: 10px;
 }
 
 /* PROJECTS */
 
-#projects{
+#projects {
     padding-top: 5%;
 }
