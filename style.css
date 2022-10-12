@@ -12,17 +12,52 @@ button{
 div{
     color: white;
 }
+
 body{
-    height: 500vh;
+    padding-bottom: 50px;
 }
+
+/* CONTENT */
 
 #content{
     padding-left: 15%;
-    display: flex;
-    flex-direction: column;
-    gap: 300px;
 }
 
+/* INTRO */
+
 #intro{
-    padding-top: 18%;
+    padding-top: 20%;
+}
+
+/* ABOUT */
+
+#about{
+    padding-top: 5%;
+}
+
+/* EXPERIENCE */
+
+#experience{
+    padding-top: 5%;
+}
+
+.topics-box{
+    padding-top: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.topics-box_topics{
+    display: flex;
+    flex-direction: column;
+}
+
+.topics-box_about{
+    padding-top:  10px;
+}
+
+/* PROJECTS */
+
+#projects{
+    padding-top: 5%;
 }
