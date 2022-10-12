@@ -28,6 +28,13 @@ body {
 #intro {
     padding-top: 20%;
 }
+#intro h2{
+    margin-top: 5px;
+}
+#intro p{
+    font-size: 20px;
+    margin-top: 20px;
+}
 
 /* ABOUT */
 
