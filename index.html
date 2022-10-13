@@ -29,61 +29,59 @@
         <div id="content_top-nav">
             <nav>
                 <ul>
-                    <li>about</li>
-                    <li>experiece</li>
-                    <li>projects</li>
+                    <li onclick="OnClick(0)">about</li>
+                    <li onclick="OnClick(1)">experiece</li>
+                    <li onclick="OnClick(2)">projects</li>
                 </ul>
             </nav>
         </div>
-        <div id="about">
-            <h2>About me</h2>
-            <section id="content-about">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed purus ut ante imperdiet
-                    sagittis vitae id mauris.
-                    Donec diam arcu, mollis id condimentum nec, efficitur et turpis. Quisque est justo, porta vel
-                    gravida id, iaculis ac neque.
-                    Suspendisse ante arcu, cursus quis lobortis quis, consequat eget risus. Fusce sodales dapibus
-                    accumsan. Quisque placerat
-                </p>
-                <img src="images/eu.png" id="picture">
-            </section>
-        </div>
-
-        <div id="experience">
-            <h2>Experience</h2>
-            <div class="topics-box">
-                <section class="topics-box_topics">
-                    <p>experience 1</p>
-                    <p>experience 2</p>
-                    <p>experience 3</p>
-                    <p>experience 4</p>
-                </section>
-                <section class="topics-box_about">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                    Phasellus auctor egestas ipsum eu ultricies. Proin molestie,<br>
-                    justo at lobortis rhoncus
+        <div id="content_body">
+            <div id="about">
+                <h2>About me</h2>
+                <section id="content-about">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed purus ut ante imperdiet
+                        sagittis vitae id mauris.
+                        Donec diam arcu, mollis id condimentum nec, efficitur et turpis. Quisque est justo, porta vel
+                        gravida id, iaculis ac neque.
+                        Suspendisse ante arcu, cursus quis lobortis quis, consequat eget risus. Fusce sodales dapibus
+                        accumsan. Quisque placerat
+                    </p>
+                    <img src="images/eu.png" id="picture">
                 </section>
             </div>
-        </div>
 
-        <div id="projects">
-            <h2>Projects</h2>
-            <div class="topics-box">
-                <section class="topics-box_topics">
-                    <p>project 1</p>
-                    <p>project 2</p>
-                    <p>project 3</p>
-                    <p>project 4</p>
-                </section>
-                <section class="topics-box_about">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                    Phasellus auctor egestas ipsum eu ultricies. Proin molestie,<br>
-                    justo at lobortis rhoncus
-                </section>
+            <div id="experiences">
+                <h2>Experience</h2>
+                <div class="topics-box">
+                    <section class="topics-box_about">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus auctor egestas ipsum eu ultricies. Proin molestie,
+                        justo at lobortis rhoncus
+                    </section>
+                </div>
+            </div>
+
+            <div id="projects">
+                <h2>Projects</h2>
+                <div class="topics-box">
+                    <section class="topics-box_topics">
+                        <p>project 1</p>
+                        <p>project 2</p>
+                        <p>project 3</p>
+                        <p>project 4</p>
+                    </section>
+                    <section class="topics-box_about">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus auctor egestas ipsum eu ultricies. Proin molestie,
+                        justo at lobortis rhoncus
+                    </section>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

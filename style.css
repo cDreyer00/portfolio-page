@@ -13,7 +13,8 @@
 * {
     padding: 0%;
     margin: 0%;
-    font-family: var(--didact)
+    font-family: var(--didact);
+    list-style-type: none;
 }
 
 body{
@@ -71,10 +72,12 @@ body {
 
     cursor: pointer;
 }
-.contact-butt
-on:hover{
+
+.contact-button:hover{
     transform: scale(1.1);
 }
+
+/* RIGHT CONTENT */
 
 #content{
     display: flex;
@@ -82,11 +85,19 @@ on:hover{
     position: absolute;
     top: 40%;
     left: 60%;
+    width: 600px;
 }
 
-#content-about{
-    width: 500px;
+#content_top-nav li{
+    cursor: pointer;
+    font-size: 22px;
+    padding-bottom: 10px;
 }
+
+#content_body{
+    margin-top: 25px;
+}
+
 #content img{
     width: 300px;
     height: 300px;
@@ -96,5 +107,5 @@ on:hover{
 #content_top-nav ul{
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid var(--green-bright);
 }
