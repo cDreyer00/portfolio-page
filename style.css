@@ -1,88 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka+One&display=swap');
+
+:root{
+    --fredoka: 'Fredoka One', cursive;
+    --didact: 'Didact Gothic', sans-serif;
+
+    --blue-darker: #09253f;
+    --blue-dark: #18435A;
+    --blue-bright: #DFEDF6;
+    --green-bright: #64ffda;
+}
 
 * {
     padding: 0%;
     margin: 0%;
+    font-family: var(--didact)
+}
+
+body{
+    background-color: var(--blue-darker);
+    color: var(--blue-bright);
 }
 
 button {
     cursor: pointer;
 }
 
-div {
-    color: white;
-}
-
 body {
     padding-bottom: 50px;
-}
-
-/* CONTENT */
-
-#content {
-    padding-left: 15%;
 }
 
 /* INTRO */
 
 #intro {
-    padding-top: 20%;
+    position: absolute;
+    top: 40%;
+    right: 60%;
 }
+
+#intro h1{
+    font-size: 60px;
+    font-family: var(--fredoka);
+    color: var(--green-bright);
+}
+
 #intro h2{
-    margin-top: 5px;
+    margin-top: 5px;    
 }
-#intro p{
+
+#intro_content{
     font-size: 20px;
     margin-top: 20px;
 }
 
-/* ABOUT */
+.contact-button{
+    transition: 0.3s;
 
-#about {
-    padding-top: 5%;
-}
-
-#about-content {
     display: flex;
     align-items: center;
-    padding-top: 20px;
-    gap: 200px;
-
-}
-#about-content p{
-    max-width: 500px;
+    justify-content: center;
+    width: 250px;
+    height: 75px;
+    gap: 30px;
+    outline: 20px;
+    margin-top: 20px;
     font-size: 22px;
+
+    border-style: solid;
+    border-radius: 50px;
+    border-color: var(--green-bright);
+
+    cursor: pointer;
+}
+.contact-butt
+on:hover{
+    transform: scale(1.1);
 }
 
-#picture{
-    width: 30vh;
-    height: 30vh;
+#content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+}
+
+#content-about{
+    width: 500px;
+}
+#content img{
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 
-/* EXPERIENCE */
-
-#experience {
-    padding-top: 5%;
-}
-
-.topics-box {
-    padding-top: 20px;
+#content_top-nav ul{
     display: flex;
-    gap: 50px;
-}
-
-.topics-box_topics {
-    display: flex;
-    flex-direction: column;
-}
-
-.topics-box_about {
-    padding-top: 10px;
-}
-
-/* PROJECTS */
-
-#projects {
-    padding-top: 5%;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
 }
