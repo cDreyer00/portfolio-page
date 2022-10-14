@@ -53,18 +53,19 @@ body {
     margin-top: 20px;
 }
 
+
 .contact-button{
     transition: 0.3s;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px;
-    height: 75px;
-    gap: 30px;
+    width: 230px;
+    height: 60px;
+    gap: 10px;
     outline: 20px;
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 24px;
 
     border-style: solid;
     border-radius: 50px;
@@ -74,7 +75,7 @@ body {
 }
 
 .contact-button:hover{
-    transform: scale(1.1);
+    background-color: var(--blue-dark);
 }
 
 /* ----- RIGHT CONTENT ----- */
@@ -112,6 +113,16 @@ body {
     display: flex;
     justify-content: space-around;
     border-bottom: 2px solid var(--green-bright);
+}
+
+
+.topics-selector{
+    transition: 0.5s;
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    background-color: var(--green-bright);
+    transform: translate(400px, 0);
 }
 
 /* ABOUT */
