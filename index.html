@@ -12,33 +12,34 @@
 </head>
 
 <body>
-    <div id="intro">
-        <h1>Hi, i'm Cristian</h1>
-        <h2>A Software Engineer and Game Developer</h2>
-        <section id="intro_content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                Phasellus auctor egestas ipsum eu ultricies. Proin molestie, justo at lobortis rhoncus
-            </p>
-        </section>
-        <form class="contact-button">
-            <p>contact me</p>
-            <img src="images/icons8-mail.svg">
-        </form>
-    </div>
-    <div id="content">
-        <div id="content_top-nav">
-            <nav>
-                <ul>
-                    <li onclick="OnClick(0)">experieces</li>
-                    <li onclick="OnClick(1)">projects</li>
-                    <li onclick="OnClick(2)">about</li>
-                </ul>
-            </nav>
-            <div class="topics-selector"></div>
+    <div id="parent">
+        <div id="intro">
+            <h1>Hi, i'm Cristian</h1>
+            <h2>a Software Developer</h2>
+            <section id="intro_content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    Phasellus auctor egestas ipsum eu ultricies. Proin molestie, justo at lobortis rhoncus
+                </p>
+            </section>
+            <form class="contact-button">
+                <p>contact me</p>
+                <img src="images/icons8-mail.svg">
+            </form>
         </div>
-        <div id="content-body">
-            <div id="about">
-                <h2>About me</h2>
+        <div id="content">
+            <div id="content_top-nav">
+                <nav>
+                    <ul>
+                        <li onclick="OnClick(0)">experieces</li>
+                        <li onclick="OnClick(1)">projects</li>
+                        <li onclick="OnClick(2)">about</li>
+                    </ul>
+                </nav>
+                <div class="topics-selector"></div>
+            </div>
+            <div id="content-body">
+                <div id="about">
+                    <h2>About me</h2>
                     <p id="content-about">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed purus ut ante imperdiet
                         sagittis vitae id mauris.
@@ -47,41 +48,10 @@
                         Suspendisse ante arcu, cursus quis lobortis quis, consequat eget risus. Fusce sodales dapibus
                         accumsan. Quisque placerat
                     </p>
-                <img id="picture" src="images/eu.png">
-            </div>
-            <div id="experiences">
-                <h2>Experiences</h2>
-                <section class="topics-box_topics">
-                    <h3>project 1</h3>
-                    <section class="topics-box_about">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus auctor egestas ipsum eu ultricies. Proin molestie,
-                        justo at lobortis rhoncus
-                    </section>
-                    <h3>project 2</h3>
-                    <section class="topics-box_about">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus auctor egestas ipsum eu ultricies. Proin molestie,
-                        justo at lobortis rhoncus
-                    </section>
-                    <h3>project 3</h3>
-                    <section class="topics-box_about">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus auctor egestas ipsum eu ultricies. Proin molestie,
-                        justo at lobortis rhoncus
-                    </section>
-                    <h3>project 4</h3>
-                    <section class="topics-box_about">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus auctor egestas ipsum eu ultricies. Proin molestie,
-                        justo at lobortis rhoncus
-                    </section>
-                </section>
+                    <img id="picture" src="images/eu.png">
                 </div>
-            </div>
-            <div id="projects">
-                <h2>Projects</h2>
-                <div class="topics-box">
+                <div id="experiences">
+                    <h2>Experiences</h2>
                     <section class="topics-box_topics">
                         <h3>project 1</h3>
                         <section class="topics-box_about">
@@ -110,10 +80,41 @@
                     </section>
 
                 </div>
+                <div id="projects">
+                    <h2>Projects</h2>
+                    <div class="topics-box">
+                        <section class="topics-box_topics">
+                            <h3>project 1</h3>
+                            <section class="topics-box_about">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus auctor egestas ipsum eu ultricies. Proin molestie,
+                                justo at lobortis rhoncus
+                            </section>
+                            <h3>project 2</h3>
+                            <section class="topics-box_about">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus auctor egestas ipsum eu ultricies. Proin molestie,
+                                justo at lobortis rhoncus
+                            </section>
+                            <h3>project 3</h3>
+                            <section class="topics-box_about">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus auctor egestas ipsum eu ultricies. Proin molestie,
+                                justo at lobortis rhoncus
+                            </section>
+                            <h3>project 4</h3>
+                            <section class="topics-box_about">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus auctor egestas ipsum eu ultricies. Proin molestie,
+                                justo at lobortis rhoncus
+                            </section>
+                        </section>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 
