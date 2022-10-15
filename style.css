@@ -95,8 +95,14 @@ body {
     padding-bottom: 10px;
 }
 
-#content_body{
+#content-body{
     margin-top: 25px;
+    font-size: 20px;
+}
+
+#content-body h2{
+    font-size: 26px;
+    margin-bottom: 10px;
 }
 
 #picture{
@@ -127,3 +133,7 @@ body {
 
 /* ABOUT */
 
+.topics-box_about{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
