@@ -48,36 +48,33 @@ button {
 }
 
 #intro h2{
-    margin-top: 5px;    
+    margin-top: 5px; 
+    font-size: 26px;
 }
 
 #intro_content{
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 20px;    
 }
 
-
-.contact-button{
-    transition: 0.3s;
-
+.contacts{
+    margin-top: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 230px;
+    gap: 20px;
+}
+
+.contacts-button{
     height: 60px;
-    gap: 10px;
-    outline: 20px;
-    margin-top: 20px;
-    font-size: 24px;
-
+    width: 60px;
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 50%;
     border-style: solid;
-    border-radius: 50px;
     border-color: var(--green-bright);
-
     cursor: pointer;
 }
 
-.contact-button:hover{
+.contacts-button:hover{
     background-color: var(--blue-dark);
 }
 
@@ -191,3 +188,4 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
+
