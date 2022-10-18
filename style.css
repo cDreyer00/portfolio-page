@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka+One&display=swap');
 
-:root{
+:root {
     --fredoka: 'Fredoka One', cursive;
     --didact: 'Didact Gothic', sans-serif;
 
     --blue-darker: #09253f;
     --blue-dark: #18435A;
-    --blue-bright: #DFEDF6;
+    --blue-bright: #ffffff;
     --green-bright: #64ffda;
 }
 
@@ -14,12 +14,13 @@
     padding: 0%;
     margin: 0%;
     font-family: var(--didact);
-    list-style-type: none;    
+    list-style-type: none;
 }
 
-body{
+body {
     background-color: var(--blue-darker);
     color: var(--blue-bright);
+    width: 100vw;
 }
 
 button {
@@ -28,42 +29,43 @@ button {
 
 #parent {
     display: flex;
-    justify-content: center;
-    gap: 25vw;
-    margin-top: 25vh;
+    justify-content: space-between;
+    padding-top: 14vh;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /* INTRO */
 
 #intro {
-    top: 40%;
-    right: 60%;
-    width: 22vw;
+    width: 500px;
+    min-width: 300px;
+    margin-right: 50px;
 }
 
-#intro h1{
-    font-size: 60px;
+#intro h1 {
+    font-size: 50px;
     font-family: var(--fredoka);
     color: var(--green-bright);
 }
 
-#intro h2{
-    margin-top: 5px; 
-    font-size: 26px;
+#intro h2 {
+    margin-top: 5px;
+    font-size: 20px;
 }
 
-#intro_content{
-    font-size: 22px;
-    margin-top: 20px;    
+#intro_content {
+    font-size: 18px;
+    margin-top: 20px;
 }
 
-.contacts{
+.contacts {
     margin-top: 10px;
     display: flex;
     gap: 20px;
 }
 
-.contacts-button{
+.contacts-button {
     height: 60px;
     width: 60px;
     padding: 10px;
@@ -74,49 +76,49 @@ button {
     cursor: pointer;
 }
 
-.contacts-button:hover{
+.contacts-button:hover {
     background-color: var(--blue-dark);
 }
 
 /* ----- RIGHT CONTENT ----- */
 
-#content{
+#content {
     display: flex;
     flex-direction: column;
     width: 600px;
 }
 
-#content_top-nav ul{
+#content_top-nav ul {
     display: flex;
     justify-content: space-around;
     border-bottom: 2px solid var(--green-bright);
 }
 
-#content_top-nav li{
+#content_top-nav li {
     transition: 0.3s;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 18px;
     padding-bottom: 10px;
     width: 200px;
     text-align: center;
 }
 
-#content_top-nav li:hover{
+#content_top-nav li:hover {
     transform: scale(1.1);
 }
 
-#content-body{
+#content-body {
     margin-top: 25px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
-#content-body h2{
-    font-size: 36px;
+#content-body h2 {
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
 
-.topics-selector{
+.topics-selector {
     transition: 0.5s;
     position: absolute;
     width: 200px;
@@ -125,21 +127,21 @@ button {
     transform: translate(400px, 0);
 }
 
-.topics-box_about{
-    margin-top: 10px;    
-    font-size: 22px;
+.topics-box_about {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
-.topic_title{
-    font-size: 26px;
+.topic_title {
+    font-size: 22px;
 }
 
 .topics-box_topics {
     margin-bottom: 30px;
 }
 
-.topics-box_topics h3{
-    font-size: 20px;
+.topics-box_topics h3 {
+    font-size: 16px;
     font-weight: bolder;
 }
 
@@ -148,44 +150,86 @@ button {
 
 /* Projects */
 
-.links{
+.links {
     display: flex;
     align-items: center;
     margin-top: 10px;
     gap: 30px;
 }
 
-.links img{
+.links img {
     transition: 0.3s;
     width: 30px;
     height: 30px;
 }
 
-.links img:hover{
+.links img:hover {
     transform: scale(1.2);
 }
 
 /* ABOUT */
 
-#about{
+#about {
     font-size: 22px;
 }
 
-.social_links{
+.social_links {
     text-align: center;
 }
 
 .social_links a {
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-#picture{
+#picture {
     display: block;
     width: 300px;
     height: 300px;
-    border-radius: 50%; 
-    margin-top: 20px;   
+    border-radius: 50%;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
+
+@media only screen and (max-width: 700px) {
+    
+    body{
+        font-size: 20px;
+    }
+
+    #parent {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    #intro {
+        width: 70vw;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        
+    }
+    #intro h1{
+        font-size: 30px;
+    }
+
+    #intro .contacts {
+        justify-content: center;
+    }
+
+    #content_top-nav{
+        display: none;
+    }
+
+    #content{
+        width: 80vw;
+        margin-bottom: 50px;
+    }
+    #content h2{
+        color: var(--green-bright);
+    }
+
+}
